@@ -11,8 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(),
-          body: SingleChildScrollView(
+        appBar: AppBar(),
+        body: Column(children: [
+          SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(
               children: [
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
                   height: 320,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("images/jpeg1,jpg"),
+                      image: AssetImage("images/2.jpeg"),
                     ),
                   ),
                 ),
@@ -39,94 +40,7 @@ class MyApp extends StatelessWidget {
                   height: 320,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("images/3.jpg"),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 100,
-                  height: 320,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("images/1.jpeg"),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 100,
-                  height: 320,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("images/2.jpeg"),
-                    ),
-                  ),
-                ),
-
-                /// solve the issue here please :)
-                Row(
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/1.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/2.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/3.jpg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/1.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 100,
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/2.jpeg"),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Container(
-                  width: 100,
-                  height: 320,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("images/3.jpg"),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 100,
-                  height: 320,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("images/1.jpeg"),
+                      image: AssetImage("images/2jpg"),
                     ),
                   ),
                 ),
@@ -144,13 +58,112 @@ class MyApp extends StatelessWidget {
                   height: 320,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("images/3.jpg"),
+                      image: AssetImage("images/2.jpeg"),
                     ),
                   ),
                 ),
               ],
             ),
-          )),
+          ),
+
+          /// solve the issue here please :)
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  height: 320,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("images/2.jpeg"),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ]),
+      ),
     );
   }
 }
